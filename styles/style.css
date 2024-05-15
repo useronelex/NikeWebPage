@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.main{
+    background-image: url("/images/background.png");
+    background-size: cover;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+ul>a{
+    margin-left: 30px;
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+ul>a:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow:  0 0 1.5em orange;
+    text-decoration: 3px underline;
+    transition: .8s;
+}
+
+.content{
+    height: 600px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3em;
+    text-indent: 3em;
+    background-image: url("/images/Nike-Logo.png");
+    background-size: cover;
+}
+
+.grid{
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+.column_3{
+    display: flex;
+    flex-direction: column;
+}
+.column_3>p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-indent: 0;
+}
+
+.grid>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:#5E1680;
+
+    width: 150px;
+    height: 50px;
+    border-radius:  10px;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-indent: 0;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: .8s;
+}
